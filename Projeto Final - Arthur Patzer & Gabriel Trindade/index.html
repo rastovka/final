@@ -1,93 +1,104 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body class="bodyGeral">
-  <main class="container">
-    <div class="divMeio">
-      <h2>Aproveite nossa liquidação !!!</h2>
-      <form action="">
-        <div class="input-field">
-          <input type="text" name="Name" id="Name" placeholder="*Name...">
-        </div>
-        <div class="input-field">
-          <input type="text" name="Email" id="Email" placeholder="*E-Mail...">
-        </div>
-        <div class="input-field">
-          <input type="text" name="Phone" id="Phone" placeholder="*Phone...">
-        </div>
-        <div class="input-field">
-          <input type="text" name="Company" id="Company" placeholder="*Company...">
-        </div>
-        <div class="input-field">
-          <input type="text" name="Login" id="Login" placeholder="*Login...">
-        </div>
-        <div class="input-field">
-          <input type="text" name="Password" id="Password" placeholder="*Password...">
-        </div>
-        <div class="input-field" id="WebsiteDiv">
-          <input type="text" name="Website" id="Website" placeholder="*Temporary Website...">
-          <p class="siteSlab">slabware.com</p>
-        </div>        
-        <div class="divPlans">
-          <h3>Selecione o Produto</h3>
-
-          <div class="divCards">
-            <div class="cardPlan" style="width: 18rem;" id="plano1">
-              <div class="cardHeader">
-                <h5 class="card-title">Montly</h5>
-              </div>
-              <div class="card-body">
-                <p class="card-valor">U$ 149</p>
-                <p class="card-text">Per month</p>
-              </div>
-            </div>
-            <div class="cardPlan" style="width: 18rem;" id="plano2">
-              <div class="cardHeader">
-                <h5 class="card-title">Semesterly</h5>
-              </div>
-              <div class="card-body">
-                <p class="card-valor">U$ 142</p>
-                <p class="card-text">Per month</p>
-                <p class="card-desc">Billed Semesterly U$ 852</p>
-              </div>
-            </div>
-            <div class="cardPlan" style="width: 18rem;" id="plano3">
-              <div class="cardHeader">
-                <h5 class="card-title">Yearly</h5>
-              </div>
-              <div class="card-body">
-                <p class="card-valor">U$ 135</p>
-                <p class="card-text">Per month</p>
-                <p class="card-desc">Billed Semesterly U$ 1,620</p>
-              </div>
-            </div>
-
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BootStrap Page</title>
+    <link rel="stylesheet" href="style.css">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />    
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">Navbar</a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <input type="submit" value="Buy Now">
-      </form>
-    </div>
-  </main>
-  <!-- Footer -->
-  <footer>
-
-    <body class="BodyFooter">
-      <div class="card-footer text-muted">
-        <div class="textFooter">
-          <p class="wordFooter">@CopyRight Todos os direitos reservados </p>
+      </nav>
+    <main>
+      <div class="row">
+         <div class="container d-flex justify-content-center">             
+            <div class="mt-5">
+                <h1> meu site</h1>
+                <p>ben vindo jabu</p>
+                <button class="btn btn-info">Entre em contato</button>
+            </div>
+         </div>
+      </div>
+      <div class="container">    
+        <div id="sobre" class="row">
+            <h1>Sobre essa Pagina</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus id fugiat aperiam officia accusamus temporibus aut veritatis, at rerum aliquid voluptatibus commodi molestiae architecto ad dignissimos pariatur est cum optio. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab vel repellendus hic enim labore ut ipsum! Quo modi blanditiis nam veritatis sunt maiores nobis minima, temporibus repellendus iure libero odit!</p>
+        </div>
+        <div id="servicos" class="row">
+          <div class="col-lg-3 "><div class="card" style="width: 18rem;">
+            <div class="card-body shadow p-3 mb-5 bg-body-tertiary rounded">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div></div>
+          <div class="col-lg-3"><div class="card" style="width: 18rem;">
+            <div class="card-body shadow p-3 mb-5 bg-body-tertiary rounded">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div></div>
+          <div class="col-lg-3"><div class="card" style="width: 18rem;">
+            <div class="card-body shadow p-3 mb-5 bg-body-tertiary rounded">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div></div>
+        </div>
+        <div id="contato" class="row">
+          <h1>Entre em contato</h1>
+          <div class="col-6">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Nome Completo" aria-label="Nome completo">
+            </div>
+            <div class="col">
+              <input type="email" class="form-control" placeholder="email" aria-label="email">
+            </div>
+            <div class="col">
+               <textarea class="form-control" cols="35" rows="15"></textarea>
+            </div>
+            <button type="button" class="btm btn-success">Enviar</button> 
+          </div>
+          <div class="col-kg-6">
+            <h1>Encontre-nos no endereço abaixo</h1>
+            <h3>Embaixo do viaduto perto do spwan de mendigo, Erechim Rs</h3>
+          </div>
         </div>
       </div>
+    </main>
+    <footer class="">
+      <div class="container">
+        <p>todos os direitos reservados</p>
       </div>
-    </body>
-  </footer>
-</body>
-
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" ></script>
+  </body>
 </html>
