@@ -155,14 +155,14 @@ footer {
 
 /* Estilos para as seções "Bem-vindo" e "Sobre Nossa Loja" */
 .welcome-section {
-  background-image: url('fundotit.jpg');
+  background-image: url('img/fundotit.jpg');
   background-position: center;
   color: #fff; /* Cor do texto para contraste */
   padding: 300px 0; /* Espaçamento interno */
 }
 
 .about-section {
-  background-image: url('caminho/da/imagem2.jpg'); /* Substitua com o caminho da sua imagem para a seção Sobre Nossa Loja */
+  background-image: url('img/.jpg');
   background-size: cover;
   background-position: center;
   color: #fff; /* Cor do texto para contraste */
