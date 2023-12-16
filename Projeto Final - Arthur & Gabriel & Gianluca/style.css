@@ -24,15 +24,6 @@ body {
   padding: 0 20px;
 }
 
-.col {
-  color: white;
-}
-
-.Divcol h1,
-p {
-  color: white;
-}
-
 .navbar {
   background-color: #151515;
   color: white;
@@ -51,13 +42,6 @@ p {
 .navbar-nav .nav-link:hover {
   color: #ffc107;
   /* Cor quando passa o mouse */
-}
-
-/* Estilos do conteúdo principal */
-
-main {
-  padding: 50px 0;
-  text-align: center;
 }
 
 .main-title {
@@ -171,12 +155,14 @@ footer {
   padding: 300px 0;
 }
 
-.about-section {
-  background-image: url('img/.jpg');
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  /* Cor do texto para contraste */
-  padding: 100px 0;
-  /* Espaçamento interno */
+
+
+#h1Fundo {
+  color: white;
+  font-size: 55px;
+}
+
+#pFundo {
+  color: white;
+  font-size: 20px;
 }

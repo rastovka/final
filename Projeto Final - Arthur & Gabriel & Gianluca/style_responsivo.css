@@ -1,0 +1,19 @@
+@media screen and (min-width: 600px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+}
