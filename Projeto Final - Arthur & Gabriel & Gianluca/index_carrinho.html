@@ -101,59 +101,40 @@
         crossorigin="anonymous"></script>
     <script>
         function adicionarAoCarrinho(produto) {
-            // Verifica se já existe um carrinho no LocalStorage
             let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-
-            // Adiciona o produto ao carrinho
             carrinho.push(produto);
-
-            // Salva o carrinho de volta no LocalStorage
             localStorage.setItem('carrinho', JSON.stringify(carrinho));
-
-            // Atualiza a lista de itens no carrinho
             atualizarListaCarrinho();
-
-            // Atualiza o contador de quantidade para o produto
             atualizarContadorQuantidade(produto, carrinho);
         }
 
         function removerDoCarrinho(produto) {
-            // Verifica se já existe um carrinho no LocalStorage
             let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
 
-            // Remove o produto do carrinho
             const index = carrinho.indexOf(produto);
             if (index !== -1) {
                 carrinho.splice(index, 1);
             }
 
-            // Salva o carrinho de volta no LocalStorage
             localStorage.setItem('carrinho', JSON.stringify(carrinho));
 
-            // Atualiza a lista de itens no carrinho
             atualizarListaCarrinho();
-
-            // Atualiza o contador de quantidade para o produto
             atualizarContadorQuantidade(produto, carrinho);
         }
 
         function atualizarListaCarrinho() {
-            // Recupera o carrinho do LocalStorage
             let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
 
-            // Obtém a lista de itens no carrinho
+
             let listaCarrinho = document.getElementById('listaCarrinho');
 
-            // Limpa a lista atual
             listaCarrinho.innerHTML = '';
 
-            // Adiciona cada item do carrinho à lista
             carrinho.forEach(item => {
                 let li = document.createElement('li');
                 li.className = 'list-group-item d-flex justify-content-between align-items-center';
                 li.textContent = item;
 
-                // Adiciona o botão de remover ao lado de cada item
                 let botaoRemover = document.createElement('button');
                 botaoRemover.className = 'btn btn-danger btn-sm';
                 botaoRemover.textContent = 'Remover';
@@ -161,50 +142,37 @@
                     removerDoCarrinho(item);
                 };
 
-                // Adiciona o botão de remover ao lado do item na lista
                 li.appendChild(botaoRemover);
 
                 listaCarrinho.appendChild(li);
             });
 
-            // Atualiza os rótulos de quantidade
             atualizarRotulosQuantidade();
         }
 
         function atualizarRotulosQuantidade() {
-            // Recupera o carrinho do LocalStorage
             let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
 
-            // Atualiza os rótulos de quantidade para cada produto
             atualizarRotuloQuantidade('CachacaPremium', carrinho);
             atualizarRotuloQuantidade('CachacaSaborizada', carrinho);
             atualizarRotuloQuantidade('EdicaoLimitada', carrinho);
         }
 
         function atualizarRotuloQuantidade(produto, carrinho) {
-            // Obtém o elemento de rótulo pelo ID
             let rotuloQuantidade = document.getElementById(`quantidade${produto}`);
 
-            // Obtém a quantidade do produto no carrinho
             let quantidade = carrinho.filter(item => item === produto).length;
 
-            // Atualiza o texto do rótulo
             rotuloQuantidade.textContent = quantidade;
         }
 
         function atualizarContadorQuantidade(produto, carrinho) {
-            // Obtém o elemento de contador pelo ID
             let contadorQuantidade = document.getElementById(`quantidade${produto}`);
-
-            // Obtém a quantidade do produto no carrinho
             let quantidade = carrinho.filter(item => item === produto).length;
-
-            // Atualiza o texto do contador
             contadorQuantidade.textContent = quantidade;
         }
 
         document.addEventListener('DOMContentLoaded', function () {
-            // Adiciona o evento de clique aos botões após o carregamento do documento
             let botoes = document.querySelectorAll('.btn-success');
             botoes.forEach(function (botao) {
                 botao.addEventListener('click', function () {
