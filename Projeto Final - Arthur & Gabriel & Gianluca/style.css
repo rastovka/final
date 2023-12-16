@@ -1,3 +1,4 @@
+/* Estilos gerais */
 
 * {
   margin: 0;
@@ -9,9 +10,9 @@
 body {
   font-size: 16px;
   line-height: 1.6;
-  background-color: #D2B48C; 
+  background-color: #D2B48C; /* Marrom levemente claro */
   font-family: 'Roboto', sans-serif;
-  color: #333; 
+  color: #333; /* Cor do texto para contraste */
 }
 
 .container {
@@ -19,6 +20,8 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
+
+/* Estilos do cabeçalho */
 
 .navbar {
   background-color: #151515;
@@ -36,8 +39,10 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-  color: #ffc107;
+  color: #ffc107; /* Cor quando passa o mouse */
 }
+
+/* Estilos do conteúdo principal */
 
 main {
   padding: 50px 0;
@@ -98,6 +103,7 @@ main {
   background-color: #ffca28;
 }
 
+/* Estilos do rodapé */
 
 footer {
   background-color: #151515;
@@ -110,6 +116,7 @@ footer {
   font-size: 0.9rem;
 }
 
+/* Estilos para formulário de contato */
 
 .contact-form {
   display: grid;
@@ -146,17 +153,18 @@ footer {
   background-color: #ffca28;
 }
 
+/* Estilos para as seções "Bem-vindo" e "Sobre Nossa Loja" */
 .welcome-section {
-  background-image: url('fundotit.jpg');
+  background-image: url('img/fundotit.jpg');
   background-position: center;
-  color: #fff; 
-  padding: 300px 0; 
+  color: #fff; /* Cor do texto para contraste */
+  padding: 300px 0; /* Espaçamento interno */
 }
 
 .about-section {
-  background-image: url('caminho/da/imagem2.jpg'); 
+  background-image: url('img/.jpg');
   background-size: cover;
   background-position: center;
-  color: #fff; 
-  padding: 100px 0; 
+  color: #fff; /* Cor do texto para contraste */
+  padding: 100px 0; /* Espaçamento interno */
 }
