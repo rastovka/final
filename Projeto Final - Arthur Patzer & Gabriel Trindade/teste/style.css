@@ -1,0 +1,170 @@
+/* Estilos gerais */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #D2B48C; /* Marrom levemente claro */
+  font-family: 'Roboto', sans-serif;
+  color: #333; /* Cor do texto para contraste */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Estilos do cabeçalho */
+
+.navbar {
+  background-color: #151515;
+  color: white;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107; /* Cor quando passa o mouse */
+}
+
+/* Estilos do conteúdo principal */
+
+main {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.main-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-subtitle {
+  font-size: 1.1rem;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.card-link {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: #ffc107;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card-link:hover {
+  background-color: #ffca28;
+}
+
+/* Estilos do rodapé */
+
+footer {
+  background-color: #151515;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+}
+
+/* Estilos para formulário de contato */
+
+.contact-form {
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #ffc107;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+  background-color: #ffca28;
+}
+
+/* Estilos para as seções "Bem-vindo" e "Sobre Nossa Loja" */
+.welcome-section {
+  background-image: url('fundotit.jpg');
+  background-position: center;
+  color: #fff; /* Cor do texto para contraste */
+  padding: 300px 0; /* Espaçamento interno */
+}
+
+.about-section {
+  background-image: url('caminho/da/imagem2.jpg'); /* Substitua com o caminho da sua imagem para a seção Sobre Nossa Loja */
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Cor do texto para contraste */
+  padding: 100px 0; /* Espaçamento interno */
+}
