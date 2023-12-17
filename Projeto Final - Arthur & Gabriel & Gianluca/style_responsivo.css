@@ -4,7 +4,7 @@
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left bottom;
+    background-position: center top;
   }
 }
 
@@ -14,6 +14,6 @@
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left bottom;
+    background-position: center bottom;
   }
 }

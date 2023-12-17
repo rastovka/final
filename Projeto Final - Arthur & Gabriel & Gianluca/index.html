@@ -19,7 +19,7 @@
         aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">Cachaça Store</a>
+      <a id="acabecalho" class="navbar-brand" href="index.html">Cachaça Store</a>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         </ul>
@@ -28,8 +28,7 @@
   </nav>
   <main>
 
-    <section class="welcome-section">
-      <!-- Conteúdo da seção "Bem-vindo à Cachaça Store" -->
+    <section class="welcome-section">      
       <div class="container">
         <div class="row">
           <div class="col m-5">
@@ -45,7 +44,7 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h1>Sobre Nossa Loja</h1>
+            <h1>Sobre nossos produtos</h1>
             <p>Descubra os sabores ricos de nossa coleção exclusiva de cachaças, cuidadosamente elaboradas para o seu
               deleite.</p>
           </div>
@@ -62,7 +61,7 @@
             <h5 class="card-title">Cachaça Premium</h5>
             <h6 class="card-subtitle mb-2 text-body-secondary">Envelhecida à perfeição</h6>
             <p class="card-text">Desfrute do sabor suave de nossa cachaça premium envelhecida.</p>
-            <a href="#" class="card-link">Ir para a compra</a>
+            <a href="index_carrinho.html" class="card-link">Ir para a compra</a>
           </div>
         </div>
       </div>
@@ -76,7 +75,7 @@
             <h6 class="card-subtitle mb-2 text-body-secondary">Excitante e única</h6>
             <p class="card-text">Experimente nossa variada gama de cachaças saborizadas para uma experiência
               encantadora.</p>
-            <a href="#" class="card-link">Ir para a compra</a>
+            <a href="index_carrinho.html" class="card-link">Ir para a compra</a>
           </div>
         </div>
       </div>
@@ -90,7 +89,7 @@
             <h6 class="card-subtitle mb-2 text-body-secondary">Rara e exclusiva</h6>
             <p class="card-text">Colete nossas garrafas de cachaça em edição limitada para uma ocasião verdadeiramente
               especial.</p>
-            <a href="#" class="card-link">Ir para a compra</a>
+            <a href="index_carrinho.html" class="card-link">Ir para a compra</a>
           </div>
         </div>
       </div>
@@ -109,7 +108,7 @@
           <div class="col">
             <textarea class="form-control" cols="35" rows="5" placeholder="Sua Mensagem"></textarea>
           </div>
-          <button type="button" class="btn btn-success">Enviar</button>
+          <button type="button" class="btn btn-success" onclick="enviaContato()">Enviar</button>
         </div>
         <div class="col-lg-6">
           <h1>Nos Encontre no Endereço Abaixo</h1>
@@ -127,6 +126,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+  <script>
+    function enviaContato() {
+      alert("Enviado com Sucesso");
+    }
+  </script>
 </body>
 
 </html>
